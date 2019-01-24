@@ -1,0 +1,34 @@
+﻿@model MvcAppStudents.Models.StudentModel
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+<h1>
+    Student Details
+</h1>
+<div>
+    <strong>@Html.LabelFor(m => m.FirstName)</strong>:
+    @Html.TextBoxFor(m => m.FirstName)
+</div>
+<div>
+    <strong>@Html.LabelFor(m => m.LastName)</strong>:
+    @Html.TextBoxFor(m => m.LastName)
+</div>
+<div>
+    <strong>@Html.LabelFor(m => m.Age)</strong>:
+    @Html.DisplayFor(m => m.Age)
+</div>
+<div>
+    <strong>@Html.LabelFor(m => m.Gender)</strong>:
+    @Html.DisplayFor(m => m.Gender)
+</div>
+<div>
+    <strong>@Html.LabelFor(m => m.Major)</strong>:
+    @Html.DisplayFor(m => m.Major)
+</div>
+</body>
+</html>
